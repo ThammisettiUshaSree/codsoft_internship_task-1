@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Protfolio Website</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Poppins&display=swap" rel="stylesheet">
+<script src="https://kit.fontawesome.com/1da30a3efc.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="header">
+       
+       <div class="container">
+        <nav>
+            <ul class="uli" id="sidemenu">
+                <li><a href="#header">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <i class="fa-solid fa-xmark" id="xm" onclick="closemenu()"></i>
+            </ul>
+            <i class="fa-solid fa-bars" id="bars" onclick="openmenu()"></i>
+        </nav>
+        <div class="header-text" class="inlinebl">
+            <p>Front-End Web Developer</p>
+            <h1>Hi , There I am <span>Usha Sree</span></h1>
+        </div>
+       </div>
+       <img src="usha.jpg" class="img" id="fade-in-image">
+    </div>
+    <div id="about">
+        <div class="class">
+            <div class="row">
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p class="lorem">Hi , This is Thammisetti Usha Sree , I hail from Andhrapradesh, currently I am pursuing undergraduation
+                        at Parul University in Computer Science with the specialization in AI.I passed out 12th standard with 97% and I have completed my 4 semesters with the cgpa 8.05 
+                        I am very much interested in full-stack development , I have also designed some projects based on front-end development.
+                        Currently I am front-end developer and I am also learning back-end technologies like node.js , mongodb , mysql ,node.ejs , react etc..
+
+                    </p>
+                </div>
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                    <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                    <p class="tab-links"onclick="opentab('education')">Education</p>
+                </div>
+                <div class="tab-contents active-tab" id="skills">
+                    <ul>
+                        <li><span>Web Development</span><br>Web app Development<br></li>
+                    </ul>
+                </div>
+                <div class="tab-contents " id="experience">
+                   <ul>
+                        <li><span>2023</span><br>Internshala Trainings<br></li>
+                        <li><span>Present</span><br>Intern at Coders Cave and Digital Bhem<br></li>
+                    </ul>
+                </div>
+                <div class="tab-contents "id="education">
+                    <ul>
+                        <li><span>2020-2022</span><br>Intermediate - 97%<br></li>
+                        <li><span>2022-present</span><br>Under Graduation - 8.05 cgpa<br></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- services---------------------------------------------------- -->
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My Services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Web Design</h2>
+                    <p >
+                        I am a front-end web developer... I am well known with the technologies likes
+                        HTML , CSS , JAVA SCRIPT ,SQL and PHP . I have designed some projects like spotify clone,
+                        e-commerce website , weather dashboard , hotel booking website .I am interested and looking
+                        forward to have the new projects .
+                    </p>
+                    <a href="#">Learn more</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- portfolio------------------------------------------------------ -->
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="music.jpg">
+                    <div class="layer">
+                        <h3>Spotify Clone </h3>
+                        <p>This clone website of spotify exactly looks similar and works like
+                            a spotify . Created by using HTML , CSS , Java Script and Bootstrap.
+                        </p>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="shopping.jpg">
+                    <div class="layer">
+                        <h3>E-commerece Website </h3>
+                        <p>The website of e-commarece allows you to dive into the world of 
+                            shopping...extreamly lovable by the online shopping customers.
+                        </p>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="sona-1.jpg">
+                    <div class="layer">
+                        <h3>Hotel booking Website </h3>
+                        <p>The website of hotel booking will be very much facilitating for 
+                            the visitors...come and have a look over of our website which connects 
+                            to the cost-effective and comforatable hotel rooms.
+                        </p>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="btn">See More</a>
+
+        </div>
+    </div>
+    <!-- contact---------------------------------------------------------- -->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <h1 class="sub-title" id="con">Contact Me</h1>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn" id="btn1">Submit</button>
+                    </form>
+                </div>
+                <div class="contact-left">
+                    
+                    <p><i class="fa-solid fa-paper-plane"></i>thammisettiushasree04@gmail.com</p>
+                    <p><i class="fa-solid fa-phone"></i>7702726372</p>
+                    <div class="social-icons">
+                       <a href="https://linkedin.com/"><i class="fa-brands fa-linkedin"></i></a> 
+                        <a href="https://github.com/"><i class="fa-brands fa-github"></i></a>
+                        <a href="https://twitter.com/"><i class="fa-brands fa-twitter"></i></a>
+                    </div>
+                    <a href="Thammisetti Usha Sree  (1).pdf" download class="btn">Download CV</a>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+    <script>
+        var tablinks=document.getElementsByClassName("tab-links");
+        var tabcontents=document.getElementsByClassName("tab-contents");
+
+        function opentab(tabname){
+            for(tablink of tablinks){
+                tablink.classList.remove("active-link");
+            }
+            for(tabcontent of tabcontents){
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+        
+
+    </script>
+    <script>
+        var sidemenu=document.getElementById("sidemenu");
+
+        function openmenu(){
+            sidemenu.style.right="0";
+        }
+        function closemenu(){
+            sidemenu.style.right="-200px";
+        }
+    </script>
+    <!-- <form name="submit-to-google-sheet">
+        <input name="email" type="email" placeholder="Email" required>
+        <button type="submit">Send</button>
+      </form> -->
+      
+      <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbypHhcRf_UAJn5mX3CUd5ZTyKwy9Z76H3YDIEKIzDr-fw5g-G9gsfsmYpkQneCs5KeY/exec'
+        const form = document.forms['submit-to-google-sheet']
+      
+        form.addEventListener('submit', e => {
+          e.preventDefault()
+          fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+            .then(response => console.log('Success!', response))
+            .catch(error => console.error('Error!', error.message))
+        })
+      </script>
+
+       <!-- footer section start -->
+    <footer>
+        <span>Created By Me</a> | <span class="far fa-copyright"></span> 2024 All rights reserved.</span>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
+</body>
+</html>
